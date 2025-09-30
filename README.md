@@ -30,7 +30,7 @@ If the first element is not greater than the second, then we don’t need to swa
 
 <img width="660" height="444" alt="image" src="https://github.com/user-attachments/assets/d5708dca-da1a-4d6a-b8a3-b8e8e4213880" />
 
-Quick Sort – Theory
+Quick Sort –
 
 Definition:
 Quick Sort is an efficient divide-and-conquer sorting algorithm. It works by selecting a pivot element, partitioning the array into two subarrays: elements less than pivot and elements greater than pivot, and then recursively sorting the subarrays.
