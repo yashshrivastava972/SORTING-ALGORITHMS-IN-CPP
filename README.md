@@ -57,8 +57,145 @@ Used in large datasets, database sorting, and standard libraries.
 
 # Algorithms:
 
+## Algorithm for Selection Sort
+1. Start
+
+Begin the program execution.
+
+2. Input
+
+Read the number of elements n in the array.
+
+Read the n elements and store them in arr[].
+
+3. Sorting Operation
+
+For i = 0 to n-2 (iterate through the array):
+a. Set minIndex = i
+b. For j = i+1 to n-1:
+
+If arr[j] < arr[minIndex], update minIndex = j
+c. Swap arr[i] and arr[minIndex] (place the smallest element at the correct position)
+
+4. Output
+
+Display the sorted array after completing all iterations.
+
+5. End
+
+Terminate the program.
+
+## Algorithm for Bubble Sort
+1. Start
+
+Begin program execution.
+
+2. Input
+
+Read the number of elements n in the array.
+
+Read the n elements and store them in arr[].
+
+3. Sorting Operation
+
+For i = 0 to n-2 (number of passes):
+a. Initialize swapped = false
+b. For j = 0 to n-i-2:
+
+Compare arr[j] and arr[j+1]
+
+If arr[j] > arr[j+1], swap them and set swapped = true
+c. If swapped == false, break (array is already sorted)
+
+4. Output
+
+Display the sorted array after completing all passes.
+
+5. End
+
+Terminate the program.
+
+## Algorithm for Quick Sort
+1. Start
+
+Begin program execution.
+
+2. Input
+
+Read the number of elements n in the array.
+
+Read the n elements and store them in arr[].
+
+3. Quick Sort Operation
+
+QuickSort(arr, low, high) function:
+
+If low < high:
+a. Call partition(arr, low, high) to find the pivot index pi.
+b. Recursively sort the left subarray: quickSort(arr, low, pi-1)
+c. Recursively sort the right subarray: quickSort(arr, pi+1, high)
+
+Partition(arr, low, high) function:
+
+Choose the last element as pivot.
+
+Initialize i = low - 1 (index of smaller element).
+
+For j = low to high - 1:
+
+If arr[j] <= pivot, increment i and swap arr[i] and arr[j].
+
+Swap arr[i+1] and pivot.
+
+Return pivot index i+1.
+
+4. Output
+
+Display the sorted array after Quick Sort completes.
+
+5. End
+
+Terminate the program.
+
+## Algorithm for Insertion Sort
+1. Start
+
+Begin program execution.
+
+2. Input
+
+Read the number of elements n in the array.
+
+Read the n elements and store them in arr[].
+
+3. Sorting Operation
+
+For i = 1 to n-1 (iterate through the array):
+a. Set key = arr[i]
+b. Initialize j = i - 1
+c. While j >= 0 and arr[j] > key:
+
+Move arr[j] one position to the right (arr[j+1] = arr[j])
+
+Decrement j
+d. Insert key at position j+1
+
+4. Output
+
+Display the sorted array after completing all iterations.
+
+5. End
+
+Terminate the program. 
 
 
+# Conclusion:
 
+The experiment helped in understanding and implementing various sorting algorithms such as Selection Sort, Bubble Sort, Insertion Sort, and Quick Sort.
 
+Simple sorts (Selection, Bubble, Insertion) are easy to implement but less efficient for large datasets.
 
+Quick Sort is fast and suitable for large arrays.
+
+Choosing the appropriate algorithm depends on data size and order.
+Overall, the experiment enhanced practical skills in sorting and algorithm analysis.
